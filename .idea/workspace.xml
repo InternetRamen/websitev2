@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b56b2e0-9735-4f38-a927-4aea68042328" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1sHIdNm2kjn9qG9F35bzucGGxEE" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jaden Hou\WebstormProjects\portfolio\portfolio\public\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jaden Hou\WebstormProjects\portfolio\portfolio\public\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b56b2e0-9735-4f38-a927-4aea68042328" name="Default Changelist" comment="" />
+      <created>1620523174179</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620523174179</updated>
+      <workItem from="1620523175220" duration="765000" />
+      <workItem from="1622160393882" duration="1407000" />
+      <workItem from="1623098380805" duration="133000" />
+      <workItem from="1623437848520" duration="2000" />
+      <workItem from="1623951935067" duration="3000" />
+      <workItem from="1626717947877" duration="42000" />
+      <workItem from="1626718191055" duration="16000" />
+      <workItem from="1626718327137" duration="905000" />
+      <workItem from="1626915176694" duration="3219000" />
+      <workItem from="1626965766624" duration="1213000" />
+      <workItem from="1626966999302" duration="16483000" />
+      <workItem from="1626986196929" duration="10651000" />
+      <workItem from="1627051029295" duration="9671000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1626718201690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1626718201690" />
+    <state x="777" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623098506553">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1623098506553" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1627064345014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1627064345014" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626996220316">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1626996220316" />
+  </component>
+</project>

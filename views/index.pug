@@ -1,0 +1,49 @@
+extends layout
+block head
+    title Home | Jaden Hou
+
+block div
+    div.main
+        h1.title Jaden Hou
+        h2.subtitle=thingToLiveBy
+block content
+     div.projects
+        div.projectsHead
+            h1.title Projects
+            hr
+        div.projectsBody
+            div.card(onclick="location.href='https://slate.jadenhou.ml'")
+              div.img
+                  img(src="/images/kgQGh7Kk.png")
+              div.text
+                  div.h3
+                    h3 Slate
+                  p Slate is a link list created with pure css.
+                  p.status Status: Maintained
+            div.card(onclick="location.href='https://github.com/InternetRamen/website'")
+                div.img
+                    img(src="/images/RBTW68Ss.png")
+                div.text
+                    div.h3
+                        h3 Website v1
+                    p This is my first personal website. Created using #[a(href="https://bulma.io/") Bulma]
+                    p.status Status: Deprecated
+     div.interests
+         div.interestsHead.center-column
+            h1.title Some Things I'm Interested In
+            hr
+         div.interestsBody
+            div.personalFinance.box
+                div.img
+                    img(src="/images/stonks.webp")
+                div.text
+                    h3 Personal Finance
+                    hr
+                    p I'm a big fan of passive income and an active member of the FIRE community.
+            div.stem.box
+                div.img
+                    img(src="/images/programming-coding.jpg")
+                div.text
+                    h3 STEM
+                    hr
+                    p I like making cool stuff and learning how the world works.

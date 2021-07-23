@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Oxygen&display=swap');
+.projects {
+    background-color: white;
+    font-family: 'Oxygen', sans-serif;
+    width: 100%
+}
+.projectsHead {
+    color: #333333;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.projectsHead h1 {
+    font-size: 30px;
+    text-align: center;
+
+}
+.projectsHead hr {
+    margin-top: 5px;
+    border-top: 2px solid black;
+    width: 90%;
+    opacity: 30%
+}
+
+.projectsBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.img {
+    width: 100%;
+    height: 300px;
+
+}
+.text {
+    width: 100%;
+    text-align: center;
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 20px;
+    width: 390px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+.card:hover {
+    cursor: pointer;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 300px;
+    object-fit: cover;
+}
+.card h3 {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.card div.h3::after {
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+
+    position: absolute;
+    background: black;
+    transition: all 0.3s ease 0s;
+    width: 0;
+}
+.h3 {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+.card:hover > div.text > div.h3:after {
+    left: 0%;
+    width: 100%;
+}
+
+.status {
+    color: darkblue;
+}
+
+
+/* mobile */
+@media (max-width: 1024px) {
+    .card {
+
+        margin-bottom: 30px;
+    }
+
+    .card p {
+        max-width: 30ch;
+    }
+}
+
+@media (min-width: 1023px) {
+    .card {
+        margin-bottom: 30px;
+    }
+    .card h3 {
+        font-size: 30px;
+    }
+    .card p {
+        max-width: 80ch;
+        font-size: 20px;
+    }
+}
+

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar p:hover {
+    cursor: pointer;
+}
+@media (min-width: 1023px) {
+    .navbar {
+        padding: 25px 10%;
+    }
+    .navbar ul {
+        list-style: none;
+
+    }
+    .navbar ul li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    .navbar p, .navbar li,.navbar a {
+        text-decoration: none;
+        color: white;
+        transition: all 0.4s ease 0.2s;
+        position: relative;
+
+    }
+    .navbar li:hover, a:hover {
+        text-decoration: none;
+        color: #00ffea;
+    }
+    .navbar a::after {
+
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: white;
+        transition: all 0.3s ease 0s;
+        width: 0;
+    }
+    .navbar a:hover::after {
+        width: 100%;
+        left: 0%;
+    }
+    .hamburger {
+        display: none;
+    }
+    .linkDropdown {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px 10%;
+        z-index: 2;
+
+    }
+    .navbar p, .navbar i, .navbar a {
+        text-decoration: none;
+        color: white;
+    }
+    .navbar ul {
+        list-style: none;
+
+    }
+    .line {
+        display: none;
+    }
+    .linex {
+        display: none;
+
+    }
+    .burg .line {
+        display: block;
+        width: 24px;
+        height: 2px;
+        border-radius: 50px;
+        border-style: solid;
+        border-color:white;
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+        background-color: white;
+        margin: 3px 0px;
+
+    }
+
+    .x .linex {
+        display: block;
+        width: 24px;
+        height: 2px;
+        border-radius: 50px;
+        border-style: solid;
+        border-color:white;
+        border-top-width: 2px;
+        border-bottom-width: 2px;
+        background-color: white;
+        overflow: hidden;
+
+    }
+
+    .line1 {
+        transform: rotate(45deg);
+        position: absolute;
+
+    }
+    .line2 {
+        transform: rotate(-45deg);
+        position: absolute;
+
+
+    }
+    .x {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger {
+        height: 24px;
+        width: 24px;
+        transition: all 0.4s ease 0.4s;
+    }
+
+    .links {
+        display: none;
+    }
+    .linkDropdown {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: all 0.3s ease;
+        pointer-events: none;
+        list-style: none;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .linkDropdown li {
+        width: 100%;
+
+    }
+    .linkDropdown div {
+        width:0%;
+        background-color: #4287f5;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+
+    }
+    .linkDropdown li:hover div {
+        width:100%;
+        cursor: pointer;
+    }
+    .dropdownItem a {
+        padding-left: 10px;
+    }
+    .linkDropdown li, .linkDropdown a {
+        color: white;
+        transition: all 0.3s ease;
+        opacity: 0%;
+        font-size: 50px;
+
+    }
+    .linkDropdown.open li, .linkDropdown.open a {
+        opacity: 100%;
+
+    }
+
+    .linkDropdown.open {
+        pointer-events: all;
+        background-color: rgba(0, 0, 0, 0.2);
+
+    }
+
+}
+

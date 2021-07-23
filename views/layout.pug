@@ -1,0 +1,44 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    block head
+    link(rel="icon", href="/images/transparentpfp.png")
+
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/helpers.css')
+    link(rel='stylesheet', href='/stylesheets/nav.css')
+    link(rel='stylesheet', href='/stylesheets/footer.css')
+    link(rel='stylesheet', href='/stylesheets/projects.css')
+    script(type="text/javascript", src="javascripts/index.js")
+    script(type="text/javascript", src="javascripts/nav.js")
+  body
+    div.layout
+      nav
+        div.navbar
+          p(onclick="location.href='/'") Jaden Hou
+          ul.links
+            li
+              a(href="/") Home
+          div.hamburger.burg(onclick="classSwitch()")
+            div.line
+            div.line
+            div.line
+            div.linex.line1
+            div.linex.line2
+        ul.linkDropdown
+            li
+              div.dropdownItem(onclick="location.href='/'")
+                a Home
+      block div
+    block content
+
+
+    div.footer
+      p © 2021 Jaden Hou
+
+      br
+      p #[a(href="mailto:jadenhou19@gmail.com") Contact Me]
+      br
+      p Powered by #[a(href="https://expressjs.com/") ExpressJS] and #[a(href="https://www.libraryofcode.org") Library Of Code]
