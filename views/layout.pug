@@ -6,13 +6,12 @@ html
     block head
     link(rel="icon", href="/images/transparentpfp.png")
 
-    link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel='stylesheet', href='/stylesheets/helpers.css')
     link(rel='stylesheet', href='/stylesheets/nav.css')
     link(rel='stylesheet', href='/stylesheets/footer.css')
     link(rel='stylesheet', href='/stylesheets/projects.css')
-    script(type="text/javascript", src="javascripts/index.js")
-    script(type="text/javascript", src="javascripts/nav.js")
+    script(type="text/javascript", src="/javascripts/index.js")
+    script(type="text/javascript", src="/javascripts/nav.js")
   body
     div.layout
       nav
@@ -21,6 +20,8 @@ html
           ul.links
             li
               a(href="/") Home
+            li
+              a(href="/blog") Blog
           div.hamburger.burg(onclick="classSwitch()")
             div.line
             div.line
@@ -31,6 +32,8 @@ html
             li
               div.dropdownItem(onclick="location.href='/'")
                 a Home
+              div.dropdownItem(onclick="location.href='/blog'")
+                a Blog
       block div
     block content
 

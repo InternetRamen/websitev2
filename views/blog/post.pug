@@ -1,0 +1,16 @@
+extends ../layout
+block head
+    title Blog | Jaden Hou
+    link(rel='stylesheet', href='/stylesheets/blog/posts.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css')
+
+block div
+    div.main
+        div.post
+            h1.topic=topic
+            p.date=date
+            p.author=author
+            div.wrapper.markdown-body
+                p.content!=markdown.render(content)
+block content
+

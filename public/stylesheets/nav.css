@@ -40,7 +40,7 @@ a {
         position: relative;
 
     }
-    .navbar li:hover, a:hover {
+    .navbar li:hover, .navbar li a:hover {
         text-decoration: none;
         color: #00ffea;
     }

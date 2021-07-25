@@ -1,0 +1,14 @@
+extends ../layout
+block head
+    title Blog | Jaden Hou
+    link(rel='stylesheet', href='/stylesheets/blog/style.css')
+    script(type="text/javascript", src="https://cdn.jsdelivr.net/npm/marked/marked.min.js")
+    script(type="text/javascript", src="/javascripts/blog.js")
+block div
+    div.main
+        div.post-list-container
+            h1.topic Posts
+            ul.post-ul
+
+block content
+

@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b56b2e0-9735-4f38-a927-4aea68042328" name="Default Changelist" comment="" />
+    <list default="true" id="3b56b2e0-9735-4f38-a927-4aea68042328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/data/posts.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/send.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/blog/posts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/blog/send.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/stylesheets/blog/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/blog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/blog/index.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/blog/post.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/blog/send.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/nav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/pc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/setups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,9 +49,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Pug File" />
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sHIdNm2kjn9qG9F35bzucGGxEE" />
   <component name="ProjectViewState">
@@ -23,7 +65,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slate" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -35,10 +77,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jaden Hou\WebstormProjects\portfolio\portfolio\public\images" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jaden Hou\WebstormProjects\portfolio\portfolio\public\images" />
     </key>
   </component>
@@ -62,26 +104,40 @@
       <workItem from="1626965766624" duration="1213000" />
       <workItem from="1626966999302" duration="16483000" />
       <workItem from="1626986196929" duration="10651000" />
-      <workItem from="1627051029295" duration="9671000" />
+      <workItem from="1627051029295" duration="10297000" />
+      <workItem from="1627084643042" duration="8606000" />
+      <workItem from="1627153612116" duration="10094000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1626718201690">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1627090588445">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1626718201690" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1627090588445" />
     <state x="777" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1623098506553">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="209" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1623098506553" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1627064345014">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1627091940177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1627064345014" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1627091940177" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1626996220316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

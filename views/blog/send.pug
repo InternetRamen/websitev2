@@ -1,0 +1,22 @@
+extends ../layout
+block head
+    title Blog | Jaden Hou
+    link(rel='stylesheet', href='/stylesheets/blog/send.css')
+    script(type="text/javascript", src="/javascripts/send.js")
+block div
+    div.main
+        div.boxes
+               | Title: #[input(type="text", id="name", name="name", autocomplete="off").form-title]
+               br
+               |Content:
+               br
+               div.form-div
+                    textarea(id="content", name="content", rows="30", columns="200", autocomplete="false").form-content
+               br
+               | Secret: #[input(type="text", id="secret", name="secret").form-secret]
+               br
+               button(id="btnSubmit", onclick="submit()") submit
+               p.validate
+
+block content
+
