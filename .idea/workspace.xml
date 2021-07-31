@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b56b2e0-9735-4f38-a927-4aea68042328" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/5aTbiqs1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/photography.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/tF0z523D.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/blog/posts.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/blog/posts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/data/posts.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/data/posts.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/javascripts/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/stylesheets/blog/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/blog/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/blog/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../slate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,10 +67,10 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jaden Hou\WebstormProjects\portfolio\portfolio\public\images" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jaden Hou\WebstormProjects\portfolio\portfolio\public\images" />
     </key>
   </component>
@@ -92,7 +97,8 @@
       <workItem from="1627051029295" duration="10297000" />
       <workItem from="1627084643042" duration="8606000" />
       <workItem from="1627153612116" duration="10431000" />
-      <workItem from="1627214837285" duration="1555000" />
+      <workItem from="1627214837285" duration="2269000" />
+      <workItem from="1627688927529" duration="4305000" />
     </task>
     <servers />
   </component>

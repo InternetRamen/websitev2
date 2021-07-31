@@ -5,10 +5,14 @@ block head
     link(rel='stylesheet', href='/stylesheets/blog/navedit.css')
     script(type="text/javascript", src="https://cdn.jsdelivr.net/npm/marked/marked.min.js")
     script(type="text/javascript", src="/javascripts/blog.js")
+    script(src="https://kit.fontawesome.com/f18b49da90.js", crossorigin="anonymous")
+
 block div
     div.main
         div.post-list-container
-            h1.topic Posts
+            div.top
+                h1.topic Posts
+                i(class="fas fa-sort-down fa-2x sort", onclick="reverse()")
             ul.post-ul
 
 block content

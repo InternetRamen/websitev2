@@ -10,10 +10,12 @@ window.onload = () => {
         .then(res => res.json())
         .then(body => {
             let arr = body.body
+            let i = 0;
             arr.forEach(val => {
                 let element = document.createElement("li")
                 element.classList.add("post")
-
+                element.style.order = i.toString();
+                i++;
                 let date = document.createElement("p")
                 date.classList.add("date")
                 let prettyDate = new Date(val.date)
@@ -42,4 +44,35 @@ window.onload = () => {
             })
 
         })
+}
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+ function reverse() {
+    let postList = document.querySelector(".post-ul")
+    let arr = Array.from(postList.children)
+    let toggle = document.querySelector(".sort")
+    if (!toggle.classList.contains("col")) {
+        let indexesOfPosts = arr.length - 1
+        for (let post of arr) {
+            post.style.order = indexesOfPosts.toString();
+            indexesOfPosts--;
+        }
+
+        toggle.classList.toggle("col")
+        toggle.classList.remove("fa-sort-down")
+        toggle.classList.add("fa-sort-up")
+    } else {
+        let indexesOfPosts = 0
+        for (let post of arr) {
+            post.style.order = indexesOfPosts.toString();
+            indexesOfPosts++;
+        }
+        toggle.classList.toggle("col")
+        toggle.classList.remove("fa-sort-up")
+        toggle.classList.add("fa-sort-down")
+    }
+
+
 }

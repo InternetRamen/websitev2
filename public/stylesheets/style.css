@@ -84,6 +84,12 @@ html, body, .layout {
 .box .text {
     text-align: center;
 }
+.img {
+    overflow: hidden;
+}
+
+
+
 @media (max-width: 1024px) {
     .interestsBody {
         justify-content: center;

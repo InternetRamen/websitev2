@@ -22,7 +22,7 @@ body {
 
 .topic {
     font-size: 30px;
-    padding-bottom: 15px;
+
 }
 
 
@@ -32,6 +32,23 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding-bottom: 30px;
+}
+.post-ul {
+    display: flex;
+    flex-direction: column;
+    transition: flex-direction 1s ease;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.sort {
+    cursor: pointer;
+
 }
 .date {
     color: grey;
@@ -65,6 +82,10 @@ body {
     .post-content {
         width: 30ch;
         max-width: 30ch;
+    }
+    .post-list-container {
+        margin: 0px 30px;
+
     }
 
 }
