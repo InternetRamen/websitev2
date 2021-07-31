@@ -4,10 +4,15 @@ const fetch = require("node-fetch");
 const fs = require('fs');
 const md = require('markdown-it')();
 const path = require('path')
+const getPosts = require('./functions/post');
+
 /* GET home page. */
+
 router.get('/', function(req, res, next) {
-    res.render('blog/index');
-});
+    let posts = getPosts()
+    console.log(posts);
+    res.render('blog/index', {posts: posts});
+}); 
 router.post('/api', function(req, res, next) {
     let bodyJson = req.body;
     let config = JSON.parse(fs.readFileSync(path.resolve(__dirname,"../config.json")))
