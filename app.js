@@ -7,7 +7,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const blogRouter = require('./routes/blog');
-
+const projectsRouter = require("./routes/projects");
 const app = express();
 const bodyParser = require('body-parser')
 // view engine setup
@@ -15,6 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 
 app.use('/blog', blogRouter);
 
+app.use("/projects", projectsRouter);
 
 
 // catch 404 and forward to error handler

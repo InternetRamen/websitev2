@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b56b2e0-9735-4f38-a927-4aea68042328" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/blog/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/blog/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/www" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/portfolio/slate" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -104,6 +104,8 @@
       <workItem from="1627688927529" duration="4305000" />
       <workItem from="1627695226880" duration="1633000" />
       <workItem from="1627767916494" duration="8000" />
+      <workItem from="1627772438287" duration="363000" />
+      <workItem from="1627773262427" duration="14000" />
     </task>
     <servers />
   </component>
@@ -127,10 +129,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" width="1092" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1627696703842" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1627696698346">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1627773274534">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1627696698346" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-117.1920.1160@0.0.1920.1040" timestamp="1627773274534" />
     <state width="1899" height="348" key="GridCell.Tab.0.bottom" timestamp="1627696791119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
