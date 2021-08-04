@@ -1,0 +1,27 @@
+extends ../layout
+block head
+    title Projects | Jaden Hou
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/projects/style.css')
+    script(type="text/javascript", src="/javascripts/projects.js")
+    //- link(rel='stylesheet', href='/stylesheets/debug.css')
+block div
+    div.main
+        div.left
+            h1.name=name
+            p.content=content
+            h1.seeMoreClick(onclick="openUp()") See More
+            div.seeMore
+                !=images
+        div.right
+            div.tech
+                h1.statusHead Status 
+                p.status=status
+                h1.linkHead Related Links
+                ul.linkContainer
+                    !=links
+                h1.techUsedHead Created Using:
+                div.techUsed
+                    !=icons
+block content
+

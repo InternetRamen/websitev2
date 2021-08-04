@@ -8,12 +8,12 @@ block div
         h1.title Jaden Hou
         h2.subtitle=thingToLiveBy
 block content
-     div.projects
+     div.projects(id="projects")
         div.projectsHead
             h1.title Projects
             hr
         div.projectsBody
-            div.card(onclick="location.href='https://slate.jadenhou.ml'")
+            div.card(onclick="location.href='/projects/1'")
               div.img
                   img(src="/images/kgQGh7Kk.png")
               div.text
@@ -21,7 +21,7 @@ block content
                     h3 Slate
                   p Slate is a link list created with pure css.
                   p.status Status: Maintained
-            div.card(onclick="location.href='https://github.com/InternetRamen/website'")
+            div.card(onclick="location.href='/projects/2'")
                 div.img
                     img(src="/images/RBTW68Ss.png")
                 div.text
@@ -29,7 +29,7 @@ block content
                         h3 Website v1
                     p This is my first personal website. Created using #[a(href="https://bulma.io/") Bulma]
                     p.status Status: Deprecated
-            div.card(onclick="location.href='/blog'")
+            div.card(onclick="location.href='/projects/3'")
                 div.img
                     img(src="/images/5aTbiqs1.png")
                 div.text
@@ -37,13 +37,21 @@ block content
                         h3 Blog
                     p This is my blog where I write once in a blue moon about finance, tech, or anything else. Created with ExpressJS and contains a REST API.
                     p.status Status: Maintained
-            div.card(onclick="location.href='/'")
+            div.card(onclick="location.href='/projects/4'")
                 div.img
                     img(src="/images/tF0z523D.png")
                 div.text
                     div.h3
                         h3 Website v2
                     p This is the second version of my personal website. Created with pure css.
+                    p.status Status: Updating
+            div.card(onclick="location.href='/projects/5'")
+                div.img
+                    img(src="/uploads/thumbnails/gmh8m.jpeg")
+                div.text
+                    div.h3
+                        h3 Wyvern
+                    p This is my personal app to send requests to this website.
                     p.status Status: Updating
      div.interests
          div.interestsHead.center-column
