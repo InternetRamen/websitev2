@@ -40,6 +40,22 @@ let obj = {
     url: "/icons/github.svg",
     href: "https://github.com/",
   },
+  JavaScript: {
+    url: "/icons/javascript.svg",
+    href: "https://developer.mozilla.org/en-US/docs/Glossary/JavaScript",
+  },
+  NodeJS: {
+    url: "/icons/nodejs.png",
+    href: "https://nodejs.org/en/",
+  },
+  Bulma: {
+    url: "/icons/bulma.svg",
+    href: "https://bulma.io/",
+  },
+  Electron: {
+    url: "/icons/electron.png",
+    href: "https://www.electronjs.org/",
+  },
 };
 
 

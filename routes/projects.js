@@ -29,15 +29,24 @@ router.get("/:projectID", function (req, res, next) {
   });
 });
 router.get("/", function (req, res, next) {
-  res.redirect("/#projects")
+  res.redirect("/#projects");
 });
 
 function write(object, thumbnailPath, screenshotPaths) {
   let data = JSON.parse(
     fs.readFileSync(path.resolve(__dirname + "/../public/data/projects.json"))
   );
-  object.tech = object.tech.split("\n");
-  object.related = object.related.split("\n");
+  if (object.tech === "N/A") {
+    object.tech = [];
+  } else {
+    object.tech = object.tech.split("\n");
+  }
+  if (object.related === "N/A") {
+    object.related = [];
+  } else {
+    object.related = object.related.split("\n");
+  }
+
   object.thumbnail = thumbnailPath;
   object.screenshots = screenshotPaths;
   object.id = data.idCount + 1;
@@ -100,59 +109,55 @@ router.post(
       checklist[i] = false;
     }
     let promise = new Promise((resolve) => {
+      let r = (Math.random() + 1).toString(36).substring(7);
+      let thumbNailStream = fs.createWriteStream(
+        path.resolve(__dirname + `/../public/uploads/thumbnails/${r}.jpeg`)
+      );
+      thumbNailStream.write(thumbnail.buffer);
+      thumbNailStream.on("finish", () => {
+        thumbnailCheck = true;
+        thumbnailP = `/uploads/thumbnails/${r}.jpeg`;
 
-        let r = (Math.random() + 1).toString(36).substring(7);
-        let thumbNailStream = fs.createWriteStream(
-          path.resolve(__dirname + `/../public/uploads/thumbnails/${r}.jpeg`)
-        );
-        thumbNailStream.write(thumbnail.buffer);
-        thumbNailStream.on("finish", () => {
-          thumbnailCheck = true;
-          thumbnailP = `/uploads/thumbnails/${r}.jpeg`;
-
-          for (let j in screenshots) {
-            let screenshot = screenshots[j];
-            let x = (Math.random() + 1).toString(36).substring(7);
-            let writeStream = fs.createWriteStream(
-              path.resolve(
-                __dirname + `/../public/uploads/screenshots/${x}.jpeg`
-              )
+        for (let j in screenshots) {
+          let screenshot = screenshots[j];
+          let x = (Math.random() + 1).toString(36).substring(7);
+          let writeStream = fs.createWriteStream(
+            path.resolve(__dirname + `/../public/uploads/screenshots/${x}.jpeg`)
+          );
+          writeStream.write(screenshot.buffer);
+          writeStream.on("finish", () => {
+            checklist[j] = true;
+            screenshotP.push(`/uploads/screenshots/${x}.jpeg`);
+            console.log(
+              Object.values(checklist).every((v) => v === true),
+              thumbnailCheck === true
             );
-            writeStream.write(screenshot.buffer);
-            writeStream.on("finish", () => {
-              checklist[j] = true;
-              screenshotP.push(`/uploads/screenshots/${x}.jpeg`);
-              console.log(
-                Object.values(checklist).every((v) => v === true),
-                thumbnailCheck === true
-              );
-              if (
-                Object.values(checklist).every((v) => v === true) &&
-                thumbnailCheck === true
-              ) {
-                doneCorrectly = true;
-                if (doneCorrectly == true) {
-                  write(body.body, thumbnailP, screenshotP);
-                  res.sendStatus(200);
-                } else {
-                  res.sendStatus(500);
-                }
+            if (
+              Object.values(checklist).every((v) => v === true) &&
+              thumbnailCheck === true
+            ) {
+              doneCorrectly = true;
+              if (doneCorrectly == true) {
+                write(body.body, thumbnailP, screenshotP);
+                res.sendStatus(200);
+              } else {
+                res.sendStatus(500);
               }
-            });
-            writeStream.on("error", (e) => {
-              res.sendStatus(500);
-              console.log(e);
-            });
-            writeStream.end();
-          }
-        });
-        thumbNailStream.on("error", (e) => {
-          res.sendStatus(500);
-          console.log(e);
-        });
-        thumbNailStream.end();
+            }
+          });
+          writeStream.on("error", (e) => {
+            res.sendStatus(500);
+            console.log(e);
+          });
+          writeStream.end();
+        }
       });
-
+      thumbNailStream.on("error", (e) => {
+        res.sendStatus(500);
+        console.log(e);
+      });
+      thumbNailStream.end();
+    });
   }
 );
 

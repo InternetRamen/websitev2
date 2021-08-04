@@ -23,6 +23,8 @@ html
               a(href="/") Home
             li
               a(href="/blog") Blog
+            li
+              a(href="/projects") Projects
           div.hamburger.burg(onclick="classSwitch()")
             div.line
             div.line
@@ -31,10 +33,14 @@ html
             div.linex.line2
         ul.linkDropdown
             li
-              div.dropdownItem(onclick="location.href='/'")
-                a Home
-              div.dropdownItem(onclick="location.href='/blog'")
-                a Blog
+                div.dropdownItem(onclick="location.href='/'")
+                    a Home
+            li
+                div.dropdownItem(onclick="location.href='/blog'")
+                    a Blog
+            li
+                div.dropdownItem(onclick="location.href='/blog'")
+                    a Projects
       block div
     block content
 

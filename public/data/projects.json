@@ -1,6 +1,102 @@
 {
-    "idCount": 0,
+    "idCount": 5,
     "body": [
-
+        {
+            "name": "Slate",
+            "status": "Maintained",
+            "summary": "Slate is a link list created with pure css.",
+            "content": "Slate is a link list, which was inspired from linktr.ee. It's used to display my social links and cool things I want to share.",
+            "tech": [
+                "JavaScript",
+                "NodeJS"
+            ],
+            "related": [
+                "https://slate.jadenhou.ml/"
+            ],
+            "thumbnail": "/uploads/thumbnails/eq7hu.jpeg",
+            "screenshots": [
+                "/uploads/screenshots/b1nvt.jpeg",
+                "/uploads/screenshots/u1q33.jpeg"
+            ],
+            "id": 1
+        },
+        {
+            "name": "Website V1",
+            "status": "Deprecated",
+            "summary": "This is my first personal website. Created using Bulma",
+            "content": "Website V1 was my first attempt at making a website. I used a CSS framework like Bulma that really limited my choice on designs and colors. I chose to solely use CSS after that. I might try to use another framework. ",
+            "tech": [
+                "JavaScript",
+                "NodeJS",
+                "GitHub",
+                "Bulma"
+            ],
+            "related": [
+                "https://github.com/InternetRamen/website"
+            ],
+            "thumbnail": "/uploads/thumbnails/z9mf6.jpeg",
+            "screenshots": [
+                "/uploads/screenshots/s3rcv.jpeg"
+            ],
+            "id": 2
+        },
+        {
+            "name": "Blog",
+            "status": "Maintained",
+            "summary": "This is my blog where I write once in a blue moon about finance, tech, or anything else. ",
+            "content": "This is a blog that I created because I was inspired by one of my brother's friends. I really enjoyed reading his blogs. Sometimes, I upload stories, thoughts, or anything really. Hopefully, I can look back at this when I am older and see how far I would have come.",
+            "tech": [
+                "JavaScript",
+                "NodeJS",
+                "GitHub"
+            ],
+            "related": [
+                "https://jadenhou.ml/blog",
+                "https://github.com/InternetRamen/websitev2"
+            ],
+            "thumbnail": "/uploads/thumbnails/ir39w.jpeg",
+            "screenshots": [
+                "/uploads/screenshots/72p8n.jpeg"
+            ],
+            "id": 3
+        },
+        {
+            "name": "Website V2",
+            "status": "Updating",
+            "summary": "This is the second version of my personal website. Created with pure css.",
+            "content": "This is the second version of my personal website. I use this site to work with my own REST APIs and to display my projects. This site is more like a continuation of my Instagram bio .",
+            "tech": [
+                "JavaScript",
+                "NodeJS",
+                "GitHub"
+            ],
+            "related": [
+                "https://jadenhou.ml/",
+                "https://github.com/InternetRamen/websitev2"
+            ],
+            "thumbnail": "/uploads/thumbnails/ac89hh.jpeg",
+            "screenshots": [
+                "/uploads/screenshots/9i987.jpeg"
+            ],
+            "id": 4
+        },
+        {
+            "name": "Wyvern",
+            "status": "Updating",
+            "summary": "This is my personal app to send requests to this website.",
+            "content": "This app was created so I could send requests to this site much easier. Before, I had to open Postman and manually type out all the fields. Now, I just have to fill out a form in this app.",
+            "tech": [
+                "Electron",
+                "NodeJS"
+            ],
+            "related": [],
+            "thumbnail": "/uploads/thumbnails/gmh8m.jpeg",
+            "screenshots": [
+                "/uploads/screenshots/gcg3r.jpeg",
+                "/uploads/screenshots/17yet.jpeg",
+                "/uploads/screenshots/atvyxh.jpeg"
+            ],
+            "id": 5
+        }
     ]
 }
